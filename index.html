@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>hy网站开发</title>
+    <link rel="stylesheet" href="bs/css/bootstrap.min.css">
+    <script src="./bs/js/jquery-3.2.1.min.js"></script>
+    <script src="./bs/js/bootstrap.min.js"></script>
+</head>
+<body calss="container">
+    <header>
+         <nav class="navbar navbar-inverse"><!-- 导航条 黑色导航条 -->
+            <div class="container"><!--响应式容器-->
+                <div class="navbar-header"><!--适应小屏幕显示-->
+                    <div class="navbar-brand">hy的个人网站</div><!--导航条上的文字-->
+                    <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#divNav"><!--三根横杠 折叠控件-->
+                        <!-- <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> -->
+                    <!-- </button> -->
+                </div>
+<!-- <div id="divNav" class="collapse navbar-collapse">
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+        <button type="button" class="btn btn-success navbar-btn" data-toggle="modal" data-target="#divModal" title="Print"></button>
+    <div class="modal fade" id="divModal" data-backdrop="true" data-keyboard="false">
+        
+    <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+    <h4 class="modal-title">Print Resume</h4>
+    </div>
+    <div class="modal-body">
+        Print Preview Or Print Config
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">closed</button>
+        <button type="button" class="btn btn-primary">Print</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    <button type="button" class="btn btn-info navbar-btn" data-toggle="tooltip" data-placement="bottom" title="Download12345">Download</button>
+    <script type="text/javascript">
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        })
+        
+    </script> -->
+    </li>
+        </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="row">
+        <div class="col-md-3"><!--创建一个3格的区域-->
+            <div class="panel panel-default">
+                <div class="panel-heading">Personal Info</div><!--标题-->
+                <div calss="panel-body">
+                    <img src="./images/DJ.jpeg" class="img-responsive img-rounded img-thumbnail" alt="Me"><!--插入图片响应式布局-->
+<p class="text-center text-primary">黄溢</p>
+    <address>
+        <strong>qust,qingdao,shandong</strong><br>
+        <span class="glyphicon glyphicon-home" title="Address"> 山东省青岛市</span><br><!--添加的图标-->
+        <span class="glyphicon glyphicon-file" title="PostalCode"> 266000</span><br>
+        <span class="glyphicon glyphicon-phone" title="Mobile"> 18819259282</span><br>
+        <span class="glyphicon glyphicon-envelope" title="Email"> 463445056@qq.com</span>
+    </address>
+        </div>
+    </div>
+<!--创建的面板-->
+    <div class="panel panel-info">
+        <div class="panel-heading">个人能力</div>
+                <div calss="panel-body">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <span class="text-muted">HTML5</span>
+                    </div>
+        <div class="col-sm-9">
+            <div class="progress"><!--进度条-->
+                <div class="progress-bar progress-bar-striped active" style="width:30%"></div><!--进度条为斜体，动态-->
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-3">
+            <span class="text-success">python</span>
+                </div>
+        <div class="col-sm-9">
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-success active" style="width:80%"></div>
+                </div>
+            </div>
+        </div>
+
+    <div class="row">
+        <div class="col-sm-3">
+            <span class="text-info">Jquery</span>
+        </div>
+        <div class="col-sm-9">
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-info active" style="width:50%"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-3">
+            <span class="text-warning">CSS</span>
+        </div>
+        <div class="col-sm-9">
+            <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-warning active" style="width:80%"></div>
+            </div>
+            </div>
+        </div>
+
+    <div class="row">
+        <div class="col-sm-3">
+            <span class="text-danger">C</span>
+        </div>
+        <div class="col-sm-9">
+            <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-danger active" style="width:85%"></div>
+            </div>
+            </div>
+        </div>
+            
+    </div>
+</div>
+    <div class="panel panel-primary">
+        <div class="panel-heading">联系我</div>
+            <div calss="panel-body">
+            <form class="form-horizontal">
+            <div class="form-group">
+            <label for="email" class="col-sm-2 control-label">email</label>
+            <div class="col-sm-10">
+                <input type="email" id="email" class="form-control" placeholder="Email">
+            </div>
+            </div>
+
+            <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">name</label>
+            <div class="col-sm-10">
+            <input type="text" id="name" class="form-control" placeholder="name">
+            </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-primary pull-right">提交</button>
+            <div class="clearfix"></div>
+            </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!--网页的右边部分-->
+</div>
+        <div class="col-sm-9">
+            <div class="jumbotron"><!--广告框-->
+                <p >个人履历</p>
+            </div>
+
+            <div class="panel-group" id="accordion">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <a href="#collapseOne" data-toggle="collapse" data-parent="#accordion">工作经历</a><!--可折叠的-->
+                        </div>
+                    </div>
+
+                    <div id="collapseOne" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-success">
+                                    <div class="row">
+                                        <div class="col-sm-4">2021年 - 至今</div>
+                                        <div class="col-sm-4">xxx 网点</div>
+                                        <div class="col-sm-4">大堂辅助</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <a href="#collapseTwo" data-toggle="collapse" data-parent="#accordion">毕业学校</a>
+                        </div>
+                    </div>
+
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-success">
+                                    <div class="row">
+                                        <div class="col-sm-4">2007年 - 2013年</div>
+                                        <div class="col-sm-4">xxx 小学</div>
+                                        <div class="col-sm-4">少先队员</div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item list-group-item-success">
+                                    <div class="row">
+                                        <div class="col-sm-4">2013年 - 2016年</div>
+                                        <div class="col-sm-4">xxx 初中</div>
+                                        <div class="col-sm-4">少先队员</div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item list-group-item-success">
+                                    <div class="row">
+                                        <div class="col-sm-4">2016年 - 2019年</div>
+                                        <div class="col-sm-4">xxx 高中</div>
+                                        <div class="col-sm-4">团员</div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item list-group-item-success">
+                                    <div class="row">
+                                        <div class="col-sm-4">2019年 - 至今</div>
+                                        <div class="col-sm-4">xxx 大学</div>
+                                        <div class="col-sm-4">党员</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <a href="#collapseThree" data-toggle="collapse" data-parent="#accordion">接手项目</a>
+                        </div>
+                        <div id="collapseThree" class="panel-collapase collapse">
+                            <div class="panel-body">
+                                <!--动态滚动-->
+                                <div id="divCarousel" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#divCarousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#divCarousel" data-slide-to="1"></li>
+                                        <li data-target="#divCarousel" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img src="./images/1.png" alt="..." class="img-responsive img-rounded">
+                                            <div class="carousel-caption">...</div>
+                                        </div>
+                                        <div class="item">
+                                            <img src="./images/2.png" alt="..." class="img-responsive img-rounded">
+                                            <div class="carousel-caption">...</div>
+                                        </div>
+                                        <div class="item">
+                                            <img src="./images/3.png" alt="..." class="img-responsive img-rounded">
+                                            <div class="carousel-caption">...</div>
+                                        </div>
+                                        <div class="item">
+                                            <img src="./images/4.png" alt="..." class="img-responsive img-rounded">
+                                            <div class="carousel-caption">...</div>
+                                        </div>
+                                    </div>
+
+                                    <a href="#divCarousel" class="left carousel-control" data-slide="prev"><!--上一页-->
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                    </a>
+
+                                    <a href="#divCarousel" class="right carousel-control" data-slide="next"><!--下一页-->
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="navbar-default navbar-fixed-bottom text-center">
+        <p>&copy:Copyright by hy</p><!--版权声明-->
+    </footer>
+</body>
+<script>
+
+</script>
+
+</html>
